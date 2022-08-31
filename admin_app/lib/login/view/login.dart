@@ -1,7 +1,10 @@
 // ignore_for_file: use_decorated_box
 
+
 import 'package:admin_app/login/view/confi.dart';
 import 'package:flutter/material.dart';
+
+import '../../homescreen/view/homescreen.dart';
 
 class LoginPage extends StatelessWidget {
    LoginPage({Key? key}) : super(key: key);
@@ -69,7 +72,11 @@ class LoginPage extends StatelessWidget {
       borderRadius: BorderRadius.circular(12),
     ), 
     ),
-onPressed: () {},
+onPressed: () {
+  Navigator.push(context,
+                          MaterialPageRoute(
+                              builder: (context) =>  Homepage()),);
+},
 child: Text('Login')),
           ],
         ),
